@@ -24,7 +24,6 @@ void main() {
           name: "Illinois Tech",
           degree: "MCS",
           result: "GPA: 3",
-
         ),
       ],
       projects: [
@@ -37,6 +36,7 @@ void main() {
 
   runApp(MyProfileApp(myData: myData));
 }
+
 class MyProfileApp extends StatelessWidget {
   final MyData myData;
 
@@ -65,6 +65,7 @@ class MyProfileApp extends StatelessWidget {
     );
   }
 }
+
 class MyInformationSection extends StatelessWidget {
   final MyData myData;
 
@@ -98,35 +99,35 @@ class MyInformationSection extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        const Text(
+                        Text(
                           "My Information",
                           style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         ),
-                        const Divider(
-                          color: Colors.black,
+                        Divider(
+                          color: Colors.white,
                           thickness: 2.0,
                         ),
                         ListTile(
                           leading:
-                              const Icon(Icons.person, color: Colors.black),
+                              Icon(Icons.person, color: Colors.white),
                           title: Text("Name: ${myData.name}",
-                              style: const TextStyle(color: Colors.black)),
+                              style: TextStyle(color: Colors.white)),
                         ),
                         ListTile(
-                          leading: const Icon(Icons. assignment_ind_sharp,
-                              color: Colors.black),
+                          leading: Icon(Icons. assignment_ind_sharp,
+                              color: Colors.white),
                           title: Text("Position: ${myData.position}",
-                              style: const TextStyle(color: Colors.black)),
+                              style: TextStyle(color: Colors.white)),
                         ),
                         ListTile(
                           leading:
-                              const Icon(Icons.assignment, color: Colors.black),
+                              Icon(Icons.assignment, color: Colors.white),
                           title: Text("Company name: ${myData.companyname}",
-                              style: const TextStyle(color: Colors.black)),
+                              style: TextStyle(color: Colors.white)),
                         ),
                       ],
                     ),
@@ -140,6 +141,7 @@ class MyInformationSection extends StatelessWidget {
     );
   }
 }
+
 class ContactDetailsSection extends StatelessWidget {
   final MyData myData;
 
@@ -163,33 +165,33 @@ class ContactDetailsSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              const Text(
+              Text(
                 "Contact Details",
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
-              const Divider(
-                color: Colors.black,
+              Divider(
+                color: Colors.white,
                 thickness: 2.0,
               ),
               const SizedBox(height: 10.0),
               ListTile(
-                leading: const Icon(Icons.email, color: Colors.black),
+                leading: Icon(Icons.email, color: Colors.white),
                 title: Text("Email: ${myData.email}",
-                    style: const TextStyle(color: Colors.black)),
+                    style: TextStyle(color: Colors.white)),
               ),
               ListTile(
-                leading: const Icon(Icons.phone, color: Colors.black),
+                leading: Icon(Icons.phone, color: Colors.white),
                 title: Text("Phone: ${myData.phone}",
-                    style: const TextStyle(color: Colors.black)),
+                    style: TextStyle(color: Colors.white)),
               ),
               ListTile(
-                leading: const Icon(Icons.home, color: Colors.black),
+                leading: Icon(Icons.home, color: Colors.white),
                 title: Text("Address: ${myData.address}",
-                    style: const TextStyle(color: Colors.black)),
+                    style: TextStyle(color: Colors.white)),
               ),
             ],
           ),
@@ -198,6 +200,7 @@ class ContactDetailsSection extends StatelessWidget {
     );
   }
 }
+
 class EducationSection extends StatelessWidget {
   final MyData myData;
 
@@ -221,28 +224,28 @@ class EducationSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              const Text(
+              Text(
                 "School History",
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
-              const Divider(
-                color: Colors.black,
+              Divider(
+                color: Colors.white,
                 thickness: 2.0,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Table(
                   border: TableBorder.all(
-                    color: Colors.black,
+                    color: Colors.white,
                     width: 1.0,
                     style: BorderStyle.solid,
                   ),
                   children: <TableRow>[
-                    const TableRow(
+                    TableRow(
                       children: <TableCell>[
                         TableCell(
                           child: Padding(
@@ -251,7 +254,7 @@ class EducationSection extends StatelessWidget {
                               "School Name",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
                           ),
@@ -263,7 +266,7 @@ class EducationSection extends StatelessWidget {
                               "Degree",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
                           ),
@@ -275,7 +278,7 @@ class EducationSection extends StatelessWidget {
                               "Result",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
                           ),
@@ -290,7 +293,7 @@ class EducationSection extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
                                 school.name,
-                                style: const TextStyle(color: Colors.black),
+                                style: TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
@@ -299,7 +302,7 @@ class EducationSection extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
                                 school.degree,
-                                style: const TextStyle(color: Colors.black),
+                                style: TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
@@ -308,7 +311,7 @@ class EducationSection extends StatelessWidget {
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
                                 school.result ?? 'N/A',
-                                style: const TextStyle(color: Colors.black),
+                                style: TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
@@ -324,6 +327,7 @@ class EducationSection extends StatelessWidget {
     );
   }
 }
+
 class ProjectsSection extends StatelessWidget {
   final MyData myData;
   const ProjectsSection({required this.myData});
@@ -332,7 +336,6 @@ class ProjectsSection extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.all(16.0),
       elevation: 4.0,
-      // color: Colors.black12,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.0),
       ),
@@ -346,22 +349,21 @@ class ProjectsSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              const Text(
+              Text(
                 "Projects",
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
-              const Divider(
-                color: Colors.black,
+              Divider(
+                color: Colors.white,
                 thickness: 2.0,
               ),
               const SizedBox(height: 10.0),
               GridView.builder(
                 shrinkWrap: true,
-                // physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   crossAxisSpacing: 10.0,
@@ -385,15 +387,15 @@ class ProjectsSection extends StatelessWidget {
                             project.svgPath,
                             width: 36.0,
                             height: 36.0,
-                          ), 
+                          ),
                           const SizedBox(height: 8.0),
                           Text(
                             project.name,
                             textAlign: TextAlign.center,
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                              color: const Color.fromARGB(255, 90, 90, 90),
                             ),
                           ),
                         ],
@@ -450,4 +452,3 @@ class ProjectData {
 
   ProjectData({required this.name, required this.svgPath});
 }
-
