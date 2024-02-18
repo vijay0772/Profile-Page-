@@ -4,18 +4,26 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.7
+  google_fonts: ^6.1.0
+  flutter_blurhash: ^0.7.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
-
+  flutter_lints: ^2.0.0
+  
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
+    - assets/images/vijay.jpeg
+    - assets/images/samrthomes.svg
+    - assets/images/homehub.svg
+    - assets/images/sofa and chill.svg
+    - assets/images/sarjani.svg
+    - assets/images/Marwiz.svg
